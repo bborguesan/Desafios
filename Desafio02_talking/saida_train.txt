@@ -1,0 +1,25 @@
+D:\Virtual\TheInsight\ibug\ibug>python train_shape_predictor.py
+[INFO] setting shape predictor options...
+[INFO] shape predictor options:
+shape_predictor_training_options(be_verbose=1, cascade_depth=20, tree_depth=4, num_trees_per_cascade_level=500, nu=0.1033, oversampling_amount=29, oversampling_translation_jitter=0, feature_pool_size=677, lambda_param=0.0251, num_test_splits=295, feature_pool_region_padding=0.0975, random_seed=, num_threads=12, landmark_relative_padding_mode=1)
+[INFO] training shape predictor...
+Training with cascade depth: 20
+Training with tree depth: 4
+Training with 500 trees per cascade level.
+Training with nu: 0.1033
+Training with random seed:
+Training with oversampling amount: 29
+Training with oversampling translation jitter: 0
+Training with landmark_relative_padding_mode: 1
+Training with feature pool size: 677
+Training with feature pool region padding: 0.0975
+Training with 12 threads.
+Training with lambda_param: 0.0251
+Training with 295 split tests.
+Fitting trees...
+Training complete
+Training complete, saved predictor to file D:\Virtual\TheInsight\shapemouth2.dat
+
+D:\Virtual\TheInsight\ibug\ibug>python evaluate_shape_predictor.py -p ..\..\shapemouth2.dat -x xml\output-test.xml
+[INFO] evaluating shape predictor...
+[INFO] error: 6.969941169617737
